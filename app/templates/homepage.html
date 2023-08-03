@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div>
+            Choose one :
+        </div>
+        <div class="buttons">
+            <form method="post" action="/image/">
+                <input class="button" type="submit" name="image" value="image">
+            </form>
+            <form method="post" action="/text/">
+                <input class="button" type="submit" name="text" value="text">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

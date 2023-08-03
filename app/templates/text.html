@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="text">
+        <div>
+            <form method="post" action="/predictiontxt/" id="txt_form">
+                <textarea form="txt_form" class="txt_input" name="txt_input" placeholder="Enter text in english" rows="5" cols="33"></textarea>
+                <input class="button" type="submit" name="predict" value="predict">
+            </form>
+        </div>
+        <div>It may take some time</div>
+    </div>
+
+</body>
+</html>
